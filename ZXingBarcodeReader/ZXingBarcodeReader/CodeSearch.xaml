@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZXingBarcodeReader.CodeSearch">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="LightGray" TextColor="Black" VerticalOptions="Fill" Text="検索" Clicked="Open_Search"></Button>
+        <Label Grid.Row="2" Grid.Column="0" VerticalOptions="Fill" Text="商品番号:" HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+        <Entry x:Name="EntryValue" Grid.Row="2" Grid.Column="1" VerticalOptions="Fill" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Entry>
+    </Grid>
+</ContentPage>
