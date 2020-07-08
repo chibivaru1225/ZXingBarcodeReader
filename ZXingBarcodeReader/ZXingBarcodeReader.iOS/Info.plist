@@ -21,22 +21,22 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>ZOA-バーコードリーダー</string>
+	<string>バーコードリーダー</string>
 	<key>CFBundleIdentifier</key>
 	<string>ZOA.Xamarin.ZXing.BarcodeReader.iOS</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.0.0.8.2</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>ZXingBarcodeReader</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>NSCameraUsageDescription</key>
 	<string>バーコードスキャンのためにカメラ機能を使用します</string>
 	<key>UIMainStoryboardFile</key>
 	<string>LaunchScreen</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcons.appiconset</string>
 </dict>
 </plist>
