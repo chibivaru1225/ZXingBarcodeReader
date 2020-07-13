@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +21,7 @@ namespace ZXingBarcodeReader
 
         public void Open_Search(object sender, EventArgs e)
         {
-            DependencyService.Get<INativeNavigation>().OpenBrowser(Util.Enum.ShohinNoURL + EntryValue.Text);
+            DependencyService.Get<INativeNavigation>().OpenBrowser(Util.Enum.ShohinNoURL + HttpUtility.UrlEncode(EntryValue.Text));
         }
     }
 }

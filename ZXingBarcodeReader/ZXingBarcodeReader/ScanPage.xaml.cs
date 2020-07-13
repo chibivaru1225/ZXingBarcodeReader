@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +21,7 @@ namespace ZXingBarcodeReader
 
         public void Handle_OnScanResult(ZXing.Result result)
         {
-            DependencyService.Get<INativeNavigation>().OpenBrowser(Util.Enum.BarcodeURL + result.Text);
+            DependencyService.Get<INativeNavigation>().OpenBrowser(Util.Enum.BarcodeURL + HttpUtility.UrlEncode(result.Text));
         }
 
         protected override void OnAppearing()
